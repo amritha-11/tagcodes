@@ -51,7 +51,7 @@ public class WebPageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get(" https://kaniz2003.github.io/Experiment-2/");
+        driver.get("https://amritha-11.github.io/DOexp2/");
     }
     @Test
     public void titleValidationTest() {
