@@ -88,8 +88,22 @@ maven jar plugin:- (put this in maven resource plugin code, after the plugin.. t
 
 maven site&deploy:- (put this after the above one)
 
+site:-
+
 <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.12.1</version>
 </plugin>
+
+
+(put this after build tag in the maven resource plugin)
+
+deploy:-
+
+<distributionManagement>
+    <repository>
+        <id>local-repo</id>
+        <url>file:///C:/my-local-maven-repo</url>
+    </repository>
+</distributionManagement>
