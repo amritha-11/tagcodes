@@ -67,3 +67,19 @@ public class WebPageTest {
         driver.quit();
     }
 }
+
+
+maven jar plugin:- (put this in maven resource plugin code, after the plugin.. this is another plugin inside the plugins)
+
+<plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-jar-plugin</artifactId>
+         <version>3.1.0</version>
+         <configuration>
+             <archive>
+                <manifestEntries>
+                    <Main-Class>org.example.Main</Main-Class>
+                </manifestEntries>
+            </archive>
+        </configuration>
+</plugin>
