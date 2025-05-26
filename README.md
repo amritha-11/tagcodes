@@ -83,3 +83,13 @@ maven jar plugin:- (put this in maven resource plugin code, after the plugin.. t
             </archive>
         </configuration>
 </plugin>
+
+
+
+maven site&deploy:- (put this after the above one)
+
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.12.1</version>
+</plugin>
